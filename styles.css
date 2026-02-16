@@ -1,0 +1,466 @@
+/* title */
+body{
+    font-family: 'Georgia', serif;
+    margin: 0;
+}
+/* Navbar background */
+.navbar {
+  background-color: wheat;   /* Blue color */
+  color: darkorange;
+  padding: 20px 40px;          /* Make it taller */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo text */
+.logo {
+  font-size: 28px;   /* Make words bigger */
+  font-weight: bold;
+}
+
+/* Navigation links */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: darkorange;
+  font-size: 20px;   /* Bigger words */
+  font-weight: 500;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+  color: darkgreen;   /* Gold color when hovering */
+}
+.image {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.photos {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+/* Center text over image */
+.tittle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: wheat;
+    max-width: 800px;
+}
+
+.tittle h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.tittle p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+/* Yellow Button */
+.button {
+    display: inline-block;
+    background-color: darkorange;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 0px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e0a800;
+    transform: translateY(-3px);
+    
+}
+.fx-neon-pulse:hover{
+     animation: neon-pulse;
+}
+
+@media (max-width: 992px) {
+    .tittle h1 {
+        font-size: 40px;
+    }
+
+    .tittle p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .image {
+        height: 70vh;
+    }
+
+    .tittle h1 {
+        font-size: 30px;
+    }
+}
+/* WHY SECTION */
+.why-section {
+    background-color: #f2f4f7;
+    padding: 100px 40px;
+    text-align: center;
+}
+
+/* Title */
+.why-title{
+    font-size: 42px;
+    color: darkorange;
+    margin-bottom: 70px;
+}
+
+/* Container */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    
+}
+
+/* Cards */
+.card {
+    background: wheat;
+    width: 330px;
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+    transition: all 0.3s ease;
+  
+}
+
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: #e0a800;
+}
+
+/* Icon circle */
+.icon {
+    width: 85px;
+    height: 85px;
+    background-color: darkorange;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    margin: 0 auto 30px auto;
+}
+
+/* Card title */
+.icon h3 {
+    font-size: 22px;
+    color: #1f3b73;
+    margin-bottom: 15px;
+}
+
+/* Card text */
+.icon p {
+    font-size: 16px;
+    color: #6b7a90;
+    line-height: 1.6;
+}
+/* FOOTER MAIN */
+.footer {
+    background: linear-gradient(to right,wheat);
+    color: wheat;
+    padding: 60px 60px 20px 60px;
+}
+
+/* Container to align 3 sections */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+/* Each section */
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Section headings */
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+/* Paragraph text */
+.footer-section p {
+    margin-bottom: 10px;
+    color: darkorange;
+    line-height: 1.6;
+}
+
+/* Quick links list */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: darkorange;
+    transition: 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: darkgreen;
+}
+
+/* Bottom copyright */
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    font-size: 14px;
+    color: #c7d2e6;
+}
+@media (max-width: 768px) {
+
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer {
+        padding: 40px 20px 20px 20px;
+    }
+
+}
+.head1 {
+    background: linear-gradient(to right, wheat);
+    color: darkorange;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.head1 h1 {
+    font-size: 65px;
+    letter-spacing: 2px;
+}
+/* ===== MAIN SECTION LAYOUT ===== */
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 80px 60px;
+    background-color: #f4f6f9;
+}
+
+/* Left side - Mission */
+.mission {
+    flex: 1;
+}
+
+.mission h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.mission p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #5a677a;
+    margin-bottom: 20px;
+}
+
+/* Right side - Values */
+.vaule {
+    flex: 1;
+}
+
+.vaule h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+}
+
+/* Each Value Box */
+.vauleX,
+.valueX {
+    display: flex;
+    align-items: center;
+    background-color: #eef1f5;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* Number circle */
+.vauleX span,
+.valueX span {
+    background-color: darkorange;
+    color: black;
+    font-weight: bold;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* Value text */
+.vauleX p,
+.valueX p {
+    font-size: 18px;
+    color: #2c2c2c;
+    margin: 0;
+}
+.vauleX:hover,
+.valueX:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+/* ===== STATISTICS SECTION ===== */
+.know {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 0px; 
+    margin: 10px auto;
+    width: 50%;
+    background-color: #eef1f5;
+    border-radius: 2px;
+}
+
+
+/* Each card */
+.Things {
+    flex: 1;
+    background-color: #eef1f5;
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 0px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+
+/* Big number */
+.Things h2 {
+    font-size: 48px;
+    color: darkorange;
+    margin-bottom: 10px;
+}
+
+/* Small text */
+.Things p {
+    font-size: 18px;
+    color: #000;
+}
+.know {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 0px;
+}
+
+/* ===== FORM SECTION ===== */
+.form-section {
+    background-color: #f4f6f9;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form title */
+.form-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: darkorange;
+}
+
+/* Form container */
+#admissionForm {
+    background-color: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+#admissionForm label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Inputs, select and textarea */
+#admissionForm input,
+#admissionForm select,
+#admissionForm textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Focus effect */
+#admissionForm input:focus,
+#admissionForm select:focus,
+#admissionForm textarea:focus {
+    border-color: darkorange;
+    box-shadow: 0 0 5px rgba(31,60,136,0.3);
+}
+
+/* Submit button */
+#admissionForm button {
+    margin-top: 25px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: darkorange;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Button hover */
+#admissionForm button:hover {
+    background-color: darkgreen;
+    transform: translateY(-3px);
+}
